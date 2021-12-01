@@ -1,0 +1,13 @@
+@import "_bottom_top.scss";
+@import "_footer.scss";
+
+.bottom {
+    background-image: url(../img/footer.png);
+    background-size: cover;
+    &__background {
+        background-color: #0a0e34e6;
+    }
+}
+.footer {
+    background-color: #0a0e34f2;
+}

@@ -1,0 +1,58 @@
+@import "_header__middle.scss";
+@import "_nav.scss";
+@import "_buttons.scss";
+
+.header {
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    &__background {
+        background-color: $header
+    }
+    &__logo {
+        margin-bottom: 291px;
+        margin-top: 54px;
+    }
+}
+.header__top {
+    display: flex;
+    justify-content: space-between;
+}
+.header__top--text {
+    text-decoration: none;
+    color: $white;
+    font-family: $light;
+    font-size: 14px;
+    line-height: 34px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    &:hover {
+        color: $grayh3;
+    }
+}
+.header__top--link {
+    margin-top: 62px;
+}
+
+@media (max-width: 1541px) {
+    .header {
+        &__logo {
+            margin-bottom: 160px;
+            margin-top: 50px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        &__top {
+            justify-content: center;
+        }
+        &__top--link {
+            display: none;
+        }
+        &__logo {
+            margin-bottom: 100px;
+            margin-top: 33px;
+        }
+    }
+}

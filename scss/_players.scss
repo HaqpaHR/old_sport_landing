@@ -1,0 +1,109 @@
+.athlet__reverse {
+    position: relative;
+}
+.content--reverse {
+    margin-left: auto;
+    margin-right: 51%;
+    max-width: 631px;
+    padding-left: 50px;
+}
+.athlets__img--reverse {
+    background-image: url(../img/basketball.png);
+    width: 991px;
+    height: 815px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+}
+.athlets__leftblock--reverse {
+    display: inline-block;
+}
+.fake--reverse {
+    top: 0;
+    left: 47%;
+}
+.athlets__stick--bottom {
+    position: absolute;
+    bottom: 15px;
+    left: 170px;
+}
+.athlets__stick--top {
+    position: absolute;
+    top: 70px;
+    right: 70px;
+}
+.athlets__cross--reverse {
+    background-image: url(../img/cross_basket_top.png);
+    height: 32px;
+    width: 37px;
+    top: 120px;
+    left: 300px;
+}
+.athlets__cross--bottom {
+    background-image: url(../img/cross_basket_bottom.png);
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 400px;
+    right: 200px;
+}
+.athlets__violet--dark {
+    background-color: $blackline;
+}
+.athlets__title--reverse {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}
+.athlets__number--text--three {
+    color: $three;
+}
+.athlet__reverse {
+    overflow: hidden;
+}
+.white__hidden {
+    display: none;
+}
+
+@media (max-width: 1541px) {
+    .athlets {
+        &__title--reverse {
+            padding-top: 65px;
+            padding-bottom: 0px;
+        }
+        &__img--reverse {
+            width: 690px;
+            height: 565px;
+            top: 15px;
+        }
+        &__cross--reverse {
+            top: 80px;
+            left: 200px;
+        }
+    }
+    .content--reverse {
+        padding-left: 32px;
+        margin-right: 36%;
+    }
+}
+
+@media (max-width: 767px) {
+    .athlets {
+        &__img--reverse--hidden {
+            background-image: url(../img/basketball_mini.png);
+            height: 250px;
+            width: 302px;
+            position: absolute;
+            left: -140px;
+            top: 100px;
+            z-index: 1;
+            
+        }
+        &__leftblock--reverse {
+            display: none;
+        }
+    }        
+    .white__hidden {
+        display: block;
+    }
+}
